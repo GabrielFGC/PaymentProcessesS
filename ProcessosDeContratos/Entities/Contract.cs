@@ -6,10 +6,10 @@ namespace ProcessosDeContratos.Entities
 {
     class Contract
     {
-        public int Number { get; set; }
-        public DateTime Date { get; set; }
-        public double totalValue { get; set; }
-        public List<InstallMent> InstallMents { get; set; } = new List<InstallMent>();
+        public int Number { get; private set; }
+        public DateTime Date { get; private set; }
+        public double totalValue { get; private set; }
+        public List<InstallMent> InstallMents { get; private set; } = new List<InstallMent>();
 
         public Contract(int number, DateTime date, double valueTotal)
         {

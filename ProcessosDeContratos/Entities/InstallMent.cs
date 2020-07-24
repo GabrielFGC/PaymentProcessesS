@@ -7,8 +7,8 @@ namespace ProcessosDeContratos.Entities
 {
     class InstallMent
     {
-        public DateTime DueDate { get; set; }
-        public double Amount { get; set; }
+        public DateTime DueDate { get; private set; }
+        public double Amount { get; private set; }
         public InstallMent(DateTime dueDate, double amount)
         {
             DueDate = dueDate;
